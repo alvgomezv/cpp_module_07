@@ -5,18 +5,27 @@
 #include <string>
 
 template<typename T>
-class Temp 
+void    swap(T &a, T &b)
 {
-    
-    public:
-        Temp(void);
-        Temp(Temp const &other);
-        Temp &operator=(Temp const &other);
-        ~Temp(void);
+    T temp = a;
+    a = b;
+    b = temp;
+}
 
-        void    swap(T *a, T *b);
-        T const min(T const a, T const b);
-        T const max(T const a, T const b);
-};
+template<typename T>
+T min(T  a, T  b)
+{
+    if (a <= b)
+        return a;
+    return b;    
+}
+
+template<typename T>
+T max(T a, T b)
+{
+    if (b >= a)
+        return b;
+    return a;    
+}
 
 #endif

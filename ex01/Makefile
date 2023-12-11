@@ -3,7 +3,7 @@ CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
-NAME = Temp
+NAME = iter
 
 all: $(NAME)
 
