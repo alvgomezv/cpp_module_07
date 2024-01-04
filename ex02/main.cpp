@@ -2,8 +2,6 @@
 
 int main()
 {
-	// CHECK LEAKS
-	
 	Array<int> arr1(5);
 	Array<std::string> arr2(7);
 
@@ -21,8 +19,8 @@ int main()
 	
 	try
 	{
-		std::cout << "arr3[1]: " << arr3[1] << std::endl;
-		std::cout << "arr4[3]: " << arr4[3] << std::endl;
+		std::cout << "arr3[1] : " << arr3[1] << std::endl;
+		std::cout << "arr4[3] : " << arr4[3] << std::endl;
 		std::cout << "arr1[10]: " << arr1[10] << std::endl;
 	}
 	catch (std::exception &e)
